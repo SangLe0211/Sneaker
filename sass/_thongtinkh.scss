@@ -1,0 +1,130 @@
+.main_center_thongtin{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 250px;
+    animation: stickyss 0.8s linear;
+    &_update{
+        width: 700px;
+        height: auto;
+        margin: auto;
+        &_heading{
+            width: 100%;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-bottom: 20px;
+            &::before{
+                content: '';
+                width: 200px;
+                height: 1.2px;
+                position: absolute;
+                background-color: #ddd;
+                bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%)
+            }
+            h2{
+                font-size: 24px;
+                font-weight: 600;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                text-Transform:uppercase;
+            }
+        }
+        .thongtin{
+            margin-bottom: 0px;
+        }
+        
+        &_content{
+            width: 100%;
+            height: auto;
+            padding: 15px;
+            .TBthongtinKH{
+                width: 600px;
+                margin: auto;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                color: rgb(38, 0, 255);
+            }
+            table{
+                padding: 0;
+                margin: auto;
+            }
+            tr{
+                height: 60px;
+                
+                
+                td{
+                    padding-left: 10px;
+                    &:first-child{
+                        font-weight: 600;
+                        font-size: 16px;
+                        width: 180px;
+                    }
+                    &:last-child{
+                        width: 400px;
+                        input{
+                            width: 400px;
+                            height: 40px;
+                            padding:0 15px;
+                            border: 1px solid #ddd;
+                            border-radius: 5px;
+                            outline: none;
+                           
+                            &:focus{
+                                border: 1px solid cyan;
+                            }
+                        }
+                    }
+                    
+                }
+                .td_capnhat{
+                   
+                    text-align: center;
+                    padding-top: 30px;
+
+
+                    a{
+                        padding: 11px 30px;
+                        background-color: var(--chudao);
+                        color: white;
+                        border-radius: 10px;
+                        font-size: 16px;
+                        transition: all 0.25s ease;
+                        &:hover{
+                            background-color: var(--chudaohover);
+                        }
+                        i{
+                            color: white;
+                            margin-left: -5px;
+                            margin-right: 5px;
+                            font-size: 13px;
+                        }
+                    }
+                    .btn_capnhat{
+                        width: 125px !important;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: white;
+                        border-radius: 10px;
+                        background-color: var(--chudao);
+                        margin-left: 10px;
+                        cursor: pointer;
+                        transition: all 0.25s ease;
+                        &:hover{
+                            background-color: var(--chudaohover);
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+
+}
+

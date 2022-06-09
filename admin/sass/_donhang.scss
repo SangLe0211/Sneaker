@@ -1,0 +1,28 @@
+.main--centers{
+    padding:50px 20px 30px 20px;
+}
+.donhang{
+    tr{
+        td{ 
+            a{
+                color: rgb(228, 178, 39) !important;
+                &:hover{
+                background-color: transparent !important;
+                color: rgb(192, 20, 20) !important;
+                }
+            }
+            &:last-child{
+                width: 10%;
+                a{
+                    color: red !important;
+                }
+            }
+            &:nth-child(3){
+                img{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@media screen and (min-width: 1537px) {
+    .wraper_center_main_right-path .btn{
+        display: none;
+    }
+    .wraper_center_main_left{
+        left: inherit;
+    }
+}
+@media screen and (max-width: 1023px) {
+  
+  .wraper_center_main_right-path,
+  .wraper_center_header{
+    width: 100%;
+    right: inherit;
+  }
+  .wraper_center_main_left{
+    left: -270px;
+    &.show{
+      left: 0;
+    }
+  }
+
+  .wraper_center_main_right{
+    width: 100%;
+    margin-left: 0px;
+    &.click{
+      left: 0;
+      width: 100%;
+      transition: all 0.4s ease;
+      .wraper_center_main_right-path{
+        margin-left: 270px;
+      }
+  }
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .wraper_center_main_right{
+      width: 100%;
+      margin-left: 0px;
+      &.click{
+        left: 0;
+        width: 100%;
+        transition: all 0.4s ease;
+        margin-left: 0;
+      }
+    }
+    .wraper_center_header-left{
+      width: 100%;
+    }
+    .wraper_center_main_right-main{
+      padding: 0;
+      &--center{
+        border-radius: 0;
+        min-height: calc(100vh - 180px);
+       
+      }
+    }
+    
+    
+  }
+
+
+
+@media screen and (max-width: 376px) {
+  .wraper_center_main_left{
+    &.show{
+      width: 100%;
+    }
+  }
+  .wraper_center_main_right{
+
+      .wraper_center_main_right-path{
+      height: 40px;
+      span{
+        
+        line-height: 40px;
+        
+      }
+      &.click{
+        width: 50px;
+        right: inherit;
+        transition: all 0.4s ease;
+        margin-left: 100%;
+        .btn{
+          transition: all 0.4s ease;
+      
+          display: none;
+          background-color: var(--chudao);
+            &.click span:before{
+            content: '\f00d';
+            }
+            span{
+              color:cyan;
+              font-size: 28px;
+              line-height: 40px;
+              
+            }
+        }
+        
+      }
+        
+      }
+    }
+   .wraper_center_main_left .sidebar .account .btn{
+      display: block;
+      transition: all 0.4s ease;
+    
+    }
+    .wraper_center_main_right-main{
+      margin-top: 21px;
+      &--center{
+        min-height: calc(100vh - 169.7px);
+        padding: 30px 20px 30px 20px;
+      }
+    }
+}

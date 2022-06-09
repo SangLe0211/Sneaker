@@ -1,0 +1,249 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: rgb(0, 0, 0);
+
+}
+html{
+  scroll-behavior: smooth;
+}
+body,
+input,
+button,
+textarea,
+select {
+  outline: none;
+  font-size: 12px;
+}
+:root{
+  --chudao: #2b3643;
+  --chudaohover: #3a485a;
+}
+input {
+    line-height: normal;
+  }
+  button {
+    cursor: pointer;
+  }
+a {
+    text-decoration: none;
+  }
+  li{
+      list-style: none;
+  }
+:root{
+    --main-color: #EA001E;
+  }
+.wrapper{
+    width: 100%;
+    height: 100%;
+    a {
+        text-decoration: none;
+      }
+    &__center{
+        max-width: 1536px;
+        height: 100%;
+        margin: auto;
+        position: relative;
+    }
+}
+
+
+.slideanim{
+  visibility: hidden;
+}
+
+
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1.2s;
+  -webkit-animation-duration: 1.2s;
+  visibility: visible;
+}
+.buy_now{
+  width: 100%;
+  height: 45px;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.623);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -50px;
+  transition: 0.3s ease-in-out;
+  opacity: 0.65;
+  padding: 0 20px;
+
+  a{
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+    font-style: italic;
+    &:hover{
+      color: rgb(0, 221, 250);
+    }
+  }
+  .btn_chitiet{
+    width: 90px;
+    height: 30px;
+    background-color: rgb(0, 221, 250);
+    border: none;
+    border-radius: 5px;
+    transition: all 0.25s ease;
+    
+    a{
+      font-size: 14px;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+    }
+    &:hover{
+      background-color: var(--main-color);
+      a{
+        color: white;
+      }
+    }
+
+  }
+}
+.chuyentrang{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding:20px 10px 20px 0;
+  &_prev, &_next, &_first, &_end{
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
+    transition: all 0.2s linear;
+    &:hover{
+      border: 1px solid var(--chudaohover);
+      color: var(--chudaohover);
+      i{
+        color: var(--chudaohover);
+      }
+    }
+
+  }
+  &_extra{
+    font-weight: 500;
+    font-style: italic;
+    
+  }
+  &_number{
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+    color: rgb(0, 0, 0);
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    &_color {
+      background-color: var(--chudaohover);
+      border: 1px solid var(--chudaohover);
+      cursor: pointer;
+      color: white;
+    }
+    transition: all 0.1s linear;
+    &:hover{
+      border: 1px solid var(--chudaohover);
+
+        // color: var(--chudaohover);
+     
+    }
+  }
+}
+#back_top{
+  width:45px;
+  height:45px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.589);
+  position: fixed;
+  bottom: 4%;
+  right:2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+  animation: scroll 0.5s linear;
+  transition: 0.25s linear;
+  @keyframes scroll {
+      0%{
+          right: -1%;
+          opacity: 0;
+      }
+      100%{
+          right: 2%;
+          opacity: 1;
+      }
+  }
+  i{
+      font-size: 30px;
+      color:white;
+      transition: 0.25s linear;
+      // &:hover{
+      //   color: var(--main-color);
+      // }
+  }
+  &:hover{
+    background-color: rgb(0, 221, 250);
+  }
+}
+
+.thong_baoTC_TB{
+  width: 80%;
+  height: 50px;
+  margin-top: 15px;
+  text-align: center;
+  .them_gio_TC{
+      font-size: 17px;
+      color: blue;
+  }
+  .them_gio_TB{
+      font-size: 17px;
+      color: rgb(255, 0, 0);
+  }
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0%);
+  }
+  
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0%);
+  }
+  
+}
+@keyframes stickyss {
+  from{
+      opacity: 0;
+      transform: translateY(30px)
+  }
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}

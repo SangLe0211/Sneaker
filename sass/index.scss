@@ -1,0 +1,19 @@
+// sass ./sass/index.scss ./css/style.css --watch
+
+
+@import "_total";
+@import "_header";
+@import "_main";
+@import "_footer";
+@import "all_products/index_products.scss";
+@import "_product_details";
+@import "_giohang";
+@import "_thanhtoan";
+@import "_chitiet_donhang";
+@import "_login";
+@import "_dangky";
+@import "_sp_yeuthich";
+@import "_thongtinkh";
+@import "_lienhe";
+@import "_Hd_muahang";
+@import "responsive/responsive.scss";

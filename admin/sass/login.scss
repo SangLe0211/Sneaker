@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b3643;
+    #form_login{
+        max-width: 400px;
+        background-color: #2b3643;
+        flex-grow: 1;
+        padding: 30px 30px 40px;
+        // box-shadow:0px 0px 25px rgba(216, 216, 216, 0.671);
+        box-shadow:0px 0px 25px cyan;
+        border-radius: 13px;
+        .form_heading{
+            font-size: 24px;
+                color: white;
+                text-align: center;
+                margin-bottom: 30px;
+        }
+        .form_group{
+            border-bottom: 1px solid #fff;
+            margin: 20px 0;
+            display: flex;
+            position: relative;
+            i{
+                color: cyan;
+                font-size: 14px;
+                top: 10px;
+                
+                position: absolute;
+            }
+            #eye{
+                cursor: pointer;
+                i:last-child{
+                    right: 0;
+                }
+            }
+            
+            .form-input{
+                background: transparent;
+                border: 0;
+                outline: 0;
+                color: white;
+                flex-grow: 1;
+                height: 30px;
+                padding-left: 40px;
+               
+            }
+            
+            
+        }
+        .btn_dangnhap{
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+            .form-submit{
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                width: 45%;
+                text-transform: uppercase;
+                padding: 7px 10px;
+                transition: 0.25s ease-in-out;
+                cursor: pointer;
+                border-radius: 10px;
+                &:hover{
+                    border: 1px solid cyan;
+                }
+            }
+        }
+    }
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover, 
+            input:-webkit-autofill:focus, 
+            input:-webkit-autofill:active{
+                -webkit-box-shadow: 0 0 0px 1000px #2b3643 inset !important;
+            }
+            input:-webkit-autofill{
+                -webkit-text-fill-color: rgb(255, 255, 255) !important;
+            }
+}
+
+            

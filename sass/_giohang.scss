@@ -1,0 +1,295 @@
+.product_content-heading{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin-top: 25px;
+    // border-bottom: 1.5px solid #ddd;
+  //   border-radius: 13px;
+    padding: 10px 0px;
+    h2{
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      position: relative;
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: -8px;
+      //   background-color: #ddd;
+      //   height: 1.5px;
+      //   box-sizing: border-box;
+      //   width: calc(1220px - 262px);
+      //   }
+    }
+    .erorr{
+        color: blue;
+      
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .erorrs{
+        color: red;
+        font-weight: 600;
+        font-size: 13px;
+    }
+   
+  }
+.main_center_products-table{
+    width: 100%;
+    min-height: 600px;
+    padding: 20px 0;
+    .table{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+        tr{
+            th{
+                border-left: 1px solid var(--chudaohover);
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: var(--chudao);
+                text-align: center;
+                color: white;
+                height: 60px;
+                
+                &:first-child{
+                  width: 5%;
+                  border-top-left-radius: 12px;
+                  border-left: none;
+                }
+                &:nth-child(2){
+                    width: 15%;
+                }
+                &:nth-child(3){
+                    width: 28%;
+                }
+                &:nth-child(4){
+                    width: 15%;
+                }
+                &:nth-child(5){
+                    width: 15%;
+                }
+                &:nth-child(6){
+                    width: 15%;
+                }
+                &:last-child{
+                    width: 12%;
+                    text-align: center;
+                    border-top-right-radius: 12px;
+                }
+            }
+             td{
+                border: 1px solid #ebeaea;
+                padding: 8px 8px 8px 14px;
+                font-size: 14px;
+                &:last-child{
+                    text-align: center;
+                    padding: 0;
+                   .xuly_chung{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                       .xuly{
+                            width: 70px;
+                            height: 27px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                            border-radius: 7px;
+                            
+                            a{
+                               font-size: 13px;
+                               font-weight: 600;
+                               color: rgb(255, 255, 255);
+                               padding: 6px 12px;
+                            }
+                       }
+                       .xuly{
+                           &_update{
+                               background-color: #2A69B2;
+                               margin-bottom: 5px;
+                           }
+                           &_delete{
+                               background-color: #dd5546; 
+                           }
+                           &:hover{
+                            background-color: cyan;
+                                a{
+                                    color: var(--chudao);
+                                }
+                           }
+                       }
+                    }
+                }
+                .update_soluong{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    input{
+                        cursor: pointer;
+                        font-size: 13px;
+                        &:nth-child(3){
+                            width: 65px;
+                            height: 28px;
+                            border: 1px solid #ddd;
+                            padding: 0 6px;
+                            margin-right: 5px;
+                            border-radius: 7px;
+                        }
+                        &:last-child{
+                            width: 40%;
+                            height: 27px;
+                            border: none;
+                            border-radius: 7px;
+                            background-color: #2A69B2;
+                            color: white;
+                            font-weight: 600;
+                            &:hover{
+                                background-color: cyan;
+                                color: var(--chudao);
+                                   
+                                   
+                               }
+                        }
+                    }
+                }
+                
+                &:nth-child(2){
+                    padding: 0;
+                    text-align: center;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                &:nth-child(2),
+                &:nth-child(3){
+                    border-left:none;
+                    border-right: none;
+                }
+                &:nth-child(5),&:nth-child(4),&:nth-child(6){
+                    text-align: center;
+                  
+                }
+                
+            }
+        }
+        .thanh_toan{
+            width: 100%;
+            height: 50px;
+            &_heading{
+                text-align: right;
+                padding-right: 50px;
+                font-size: 15px;
+                font-weight: 600;
+                border-right: none;
+            }
+            &_money{
+                text-align: left !important;
+                border-right: 1px solid #ebeaea !important;
+                padding-left: 40px !important;
+                border-left: none;
+                font-size: 15px;
+                font-weight: 600;
+                color: rgb(36, 36, 36);
+            }
+        }
+        
+        
+    }
+    .shopping{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 60px !important;
+        margin: 30px 0;
+        a, i{
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+        }
+        &_button{
+            width: 200px;
+            height: 45px;
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--chudao);
+            transition: all 0.25s linear;
+            &:hover{
+                background-color: 	rgb(0, 221, 250);
+                a, i{
+                    color: rgb(255, 255, 255);
+                }
+            }
+        }
+        &_left{
+            i{
+                padding: 0 5px 0 0;
+            }
+        }
+        &_right{
+            margin-left: 10px;
+            i{
+                padding: 0 0px 0 5px;
+             }
+        }
+    }
+}
+
+.thongbao{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+   &_button{
+    width: 200px;
+    height: 45px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--chudao);
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: all 0.25s linear;
+    &:hover{
+        background-color: 	#3399FF;
+        a, i{
+            color: rgb(255, 255, 255);
+        }
+    }
+        a{
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.25s linear;
+            i{
+                color: white;
+                font-size: 15px;
+                padding: 0 10px 0 0;
+                transition: all 0.25s linear;
+            }
+        }
+    }
+}

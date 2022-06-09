@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+   
+}
+body{
+    background-color: #eef1f5;
+}
+:root{
+    --chudao: #2b3643;
+    --chudaohover: #3a485a;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+input[type="submit"] {
+  font-family: FontAwesome;
+}
+.wraper{
+    width: 100%;
+    height: 100%;
+   
+    &_center{
+        // max-width: 1536px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        margin: auto;
+        position: relative;
+        box-shadow: 0px 0px 15px var(--chudaohover);
+        
+        &_footer{
+            width: 100%;
+            height: 50px;
+            background-color: var(--chudao);
+            border-top: 1px solid var(--chudaohover);
+            bottom: 0;
+            
+        }
+    }
+}
+
+.thongbao_submit{
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  span{
+    padding-right: 10px;
+  }
+  a{
+    padding: 5px 7px;
+    background-color: var(--chudao);
+    color: white;
+    border-radius: 10px;
+    font-size: 13px;
+    &:hover{
+      background-color: var(--chudaohover);
+    }
+    i{
+      font-size: 10px;
+      padding-left: -5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.chuyentrang{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 10px 20px 0;
+    margin-top: 20px;
+    &_prev, &_next, &_first, &_end{
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #ddd;
+      color: rgb(0, 0, 0);
+      font-size: 15px;
+      font-weight: 700;
+      margin-left: 5px;
+      transition: all 0.2s linear;
+      &:hover{
+        border: 1px solid var(--chudaohover);
+        color: var(--chudaohover);
+        i{
+          color: var(--chudaohover);
+        }
+      }
+  
+    }
+    &_extra{
+      font-weight: 500;
+      font-style: italic;
+      
+    }
+    &_number{
+      padding: 8px 12px;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid #ddd;
+      color: rgb(0, 0, 0);
+      margin-left: 5px;
+      font-size: 15px;
+      font-weight: 700;
+      &_color {
+        background-color: var(--chudaohover);
+        border: 1px solid var(--chudaohover);
+        cursor: pointer;
+        color: white;
+      }
+      transition: all 0.1s linear;
+      &:hover{
+        border: 1px solid var(--chudaohover);
+  
+          // color: var(--chudaohover);
+       
+      }
+    }
+  }
+
+  .TT_loi{
+    color: red;
+    font-size: 18px;
+  }
+  .TB_thanhcong{
+    color: rgb(0, 102, 255);
+    font-size: 18px;
+  }
+
+
+  .thongbao{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    h3{
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+   &_button{
+    width: 100px;
+    height: 38px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--chudao);
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: all 0.25s linear;
+    &:hover{
+        background-color: 	#3399FF;
+        a, i{
+            color: rgb(255, 255, 255);
+        }
+    }
+        a{
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.25s linear;
+          
+            i{
+                color: white;
+                font-size: 15px;
+                padding-right: 5px;
+                transition: all 0.25s linear;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.productss_chitiet_don{
+    width: 100%;
+    height: auto;
+    padding-bottom: 250px;
+    &_heading{
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        h2{
+            font-size: 18px;
+        }
+    }
+    .table{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        text-align: left;
+       
+        tr{
+            th{
+                border-left: 1px solid var(--chudaohover);
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: var(--chudao);
+                text-align: center;
+                color: white;
+                height: 60px;
+                
+                &:first-child{
+                  width: 5%;
+                  border-top-left-radius: 12px;
+                  border-left: none;
+                }
+                &:nth-child(2){
+                    width: 15%;
+                }
+                &:nth-child(3){
+                    width: 25%;
+                }
+                &:nth-child(4){
+                    width: 15%;
+                }
+                &:nth-child(5){
+                    width: 5%;
+                }
+                &:nth-child(6){
+                    width: 13%;
+                }
+                &:nth-child(7){
+                    width: 12%;
+                }
+                &:last-child{
+                    width: 10%;
+                    text-align: center;
+                    border-top-right-radius: 12px;
+                }
+            }
+             td{
+                border: 1px solid #ebeaea;
+                padding: 8px 8px 8px 14px;
+                font-size: 14px;
+                text-align: center;
+                
+                &:nth-child(2){
+                    padding: 0;
+                    border-left:none;
+                    border-right: none;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                
+                &:nth-child(3){
+                    text-align: left;
+                    border-left:none;
+                    border-right: none;
+                }
+                &:last-child{
+                   
+                    padding: 0;
+                }
+                
+            }
+        }
+        
+        
+        
+    }
+
+}
